@@ -1,0 +1,77 @@
+      font-family: 'Alfa Slab One', cursive;
+      position: relative;
+      color: white;
+    }
+
+    .portfolio {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 1vw;
+      z-index: 10;
+    }
+    
+    a.letter-box {
+     color: white;
+     text-decoration: none; 
+    }
+    
+    .letter-box {
+      padding: 20px;
+      font-size: 6vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 5vw;
+      min-height: 5vw;
+    }
+
+    /* 自己紹介リンク */
+    .about-link {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      color: #ffffff;
+      text-decoration: none;
+      z-index: 10;
+      transition: color 0.3s ease;
+    }
+
+    .about-link:hover {
+      color: #ffeb99;
+    }
+  </style>
+</head>
+  <!-- 三日月 -->
+  <div class="moon"></div>
+
+  <!-- PORTFOLIO文字 -->
+  <div class="portfolio">
+    <div class="letter-box">P</div>
+    <div class="letter-box">O</div>
+    <a href="https://codepen.io/ijyzzrrz-the-typescripter/pen/zxxjvxE" div class="letter-box">R</a>
+    <div class="letter-box">T</div>
+    <div class="letter-box">F</div>
+    <div class="letter-box">O</div>
+    <div class="letter-box">L</div>
+    <div class="letter-box">I</div>
+    <div class="letter-box">O</div>
+  </div>
+
+  <!-- 流れ星たち -->
+  <div class="star" style="top: 20px; left: 100px; animation-delay: 1s;"></div>
+  <div class="star" style="top: 80px; left: 300px; animation-delay: 3s;"></div>
+  <div class="star" style="top: 150px; left: 50px; animation-delay: 5s;"></div>
+  <div class="star" style="top: 200px; left: 400px; animation-delay: 7s;"></div>
+  <div class="star" style="top: 100px; left: 500px; animation-delay: 2s;"></div>
+
+  <!-- 自己紹介リンク -->
+  <a href="https://codepen.io/ijyzzrrz-the-typescripter/pen/wBBjvNo" class="about-link">自己紹介</a>
+</body>
+</html>
