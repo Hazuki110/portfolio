@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>お問い合わせ</title>
+  <style>
+    body {
+      background-color: #001f3f;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 2em;
+      text-align: center;
+    }
+
+    form {
+      background: #002b5c;
+      padding: 2em;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 2em auto;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 1em 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      background: #ffcc00;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ffd633;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>お問い合わせ</h1>
+  <form action="https://formsubmit.co/ikebo118@yahoo.co.jp" method="POST">
+    <input type="text" name="name" placeholder="お名前" required>
+    <input type="email" name="email" placeholder="メールアドレス" required>
+    <textarea name="message" rows="5" placeholder="メッセージ内容" required></textarea>
+    <button type="submit">送信する</button>
+  </form>
+</body>
+</html>
